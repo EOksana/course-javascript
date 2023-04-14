@@ -64,9 +64,13 @@ export default {
     return size;
   },
 
-  getFriends() {
+  getFriends(id) {
     const params = {
       fields: ['photo_50', 'photo_100', 'photo_400'],
+    };
+
+    if (id != null) {
+      params.user_id = id;
     }
     return this.callApi('friends.get', params);
   },
