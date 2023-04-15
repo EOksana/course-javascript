@@ -73,7 +73,9 @@ a {
     color: #B0B0B0;
 }
 
-.page-login-vert1, .page-login-vert2, .page-login-vert3 {
+.page-login-vert1,
+.page-login-vert2,
+.page-login-vert3 {
     width: 71px;
     height: 333px;
     position: absolute;
@@ -345,4 +347,35 @@ a {
     font-size: 18px;
     line-height: 26px;
     margin-top: 8px;
+}
+
+.page-profile .component-user-friend-photo {
+    height: 72px;
+    width: 72px;
+    border-radius: 50%;
+
+    background-size: cover;
+    background-position: center;
+
+}
+
+.page-profile .component-user-friend {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.page-profile .component-user-friends {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5%;
+    justify-content: center;
+}
+
+.component-profile-mode {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
 }
